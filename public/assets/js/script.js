@@ -2,7 +2,7 @@ var app = angular.module("app", []);
 
 app.controller("index", function($http, $scope){
 
-    $scope.resposta = "ff";
+    $scope.resposta = "";
 
     $http.get("https://medicos-progweb.herokuapp.com/medicos").then(function(response) {
         $scope.medicos = response.data;

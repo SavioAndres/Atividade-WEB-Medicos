@@ -11,17 +11,17 @@ class Paciente
 
     public function setNomeMedico($nome_medico_): void 
     {
-        self::$nome_medico = $nome_medico_;
+        $this->nome_medico = $nome_medico_;
     }
 
     public function setNomePaciente($nome_paciente_): void 
     {
-        self::$nome_paciente = $nome_paciente_;
+        $this->nome_paciente = $nome_paciente_;
     }
 
     public function setTipoSanguineo($tipo_sanguineo_): void
     {
-        self::$tipo_sanguineo = $tipo_sanguineo_;
+        $this->tipo_sanguineo = $tipo_sanguineo_;
     }
 
     public function getTiposSanguineo(): string
