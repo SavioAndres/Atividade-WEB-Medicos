@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Atividade WEB</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <h2>Atividade WEB</h2>
+    <div ng-controller="index">
+        <label>Nome do médico:</label>
+        <select ng-model="medico" ng-options="item for item in medicos">
+            <option>{{ item }}</option>
+        </select><br/>
+        <label>Nome do paciente:</label>        
+        <input type="text" ng-model="nome_paciente"><br/>
+        <label>Tipo sanguíneo:</label>
+        <select ng-model="sangue" ng-options="item for item in tipo_saguineo">
+            <option>{{ item }}</option>
+        </select><br/>
+        <button ng-click="enviar()">Enviar</button>
+        <p>{{ resposta }}</p>
+    </div>
+</body>
+</html>
